@@ -1,0 +1,19 @@
+{
+  "name": "node2aws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js --no-deprecation",
+    "test": "mocha ./tests --recursive --timeout 15000 --no-deprecation --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "express": "^4.18.2",
+    "mocha": "^10.2.0"
+  }
+}
