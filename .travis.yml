@@ -10,12 +10,12 @@ script:
   - docker run yash1300/hello_test
 
 deploy:
-  provider:elasticbeanstalk
-  access_key_id:$accessKeyID
-  secret_access_key:$secretAccessKey
-  region:"us-east-1"
-  app:"hello-v3"
-  env:"Hellov3-env"
-  bucket_name:"hello-world-s3-bucket-1234321"
+  provider: elasticbeanstalk
+  access_key_id: $accessKeyID
+  secret_access_key: $secretAccessKey
+  region: "us-east-1"
+  app: "hello-v3"
+  env: "Hellov3-env"
+  bucket_name: "hello-world-s3-bucket-1234321"
   on:
-    branch:master
+    branch: master
