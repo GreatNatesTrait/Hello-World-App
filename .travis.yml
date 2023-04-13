@@ -1,0 +1,22 @@
+sudo: required
+
+services:
+-docker
+
+before_install:
+-docker build -f dockerfile.dev -t yash1300/hello_test .
+
+script:
+-docker run yash1300/hello_test
+
+deploy:
+provider:elasticbeanstalk
+access_key_id:"AKIAVNPP546DIE3GHS3Q"
+secret_access_key:
+secure:"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"
+region:"us-east-1"
+app:"hello"
+env:"Hellov3-env"
+bucket_name:"hello-world-s3-bucket-1234321"
+on:
+branch:master
