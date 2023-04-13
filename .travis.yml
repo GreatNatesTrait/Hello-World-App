@@ -11,8 +11,8 @@ script:
 
 deploy:
   provider:elasticbeanstalk
-  access_key_id:"AKIAVNPP546DMPIHFIVZ"
-  secret_access_key:"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"
+  access_key_id:$accessKeyID
+  secret_access_key:$secretAccessKey
   region:"us-east-1"
   app:"hello-v3"
   env:"Hellov3-env"
