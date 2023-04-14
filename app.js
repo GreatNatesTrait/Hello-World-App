@@ -7,7 +7,7 @@ app.get("/",(req,res)=>{
     res.json({
         meta: {
             status:true,
-            message:"aite",
+            message:"aite\nNow that its working, lets see a revision",
             code:200
         }
     });
@@ -16,7 +16,3 @@ app.get("/",(req,res)=>{
 app.listen(port,()=> console.log(`Server running successfully on port ${port}`));
 
 module.exports = app;
-
-//test
-//test2
-//test3
